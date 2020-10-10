@@ -1,0 +1,16 @@
+<html>
+<head>
+ <title>register</title>
+</head>
+<body>
+ <h1>registerpage</h1>
+ <form action="{% url 'register' %}" method="POST">
+  {% csrf_token %}
+  <input type="text" name="uname" placeholder="patient name"><br>
+  <input type="number" name="age" placeholder="age"><br>
+  <input type="email" name="pemail" placeholder="email">
+  <input type="submit" name="register">
+
+ </form>
+</body>
+</html>
